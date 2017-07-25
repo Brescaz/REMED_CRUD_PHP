@@ -1,0 +1,1 @@
+Hello, what ring do you got ?
