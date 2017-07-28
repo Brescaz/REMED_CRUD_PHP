@@ -22,7 +22,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function setNameAttribute($value) 
+    /*public function setNameAttribute($value) 
     {
     	$this->attributes['name'] = ucfirst($value);
     }
@@ -36,7 +36,12 @@ class User extends Authenticatable
     {
     	return strtoupper($value);
     }
-    
+    */
+
+    public function projets() {
+
+        return $this->hasMany('App\Projet');
+    }
 }
 
 /*<?php

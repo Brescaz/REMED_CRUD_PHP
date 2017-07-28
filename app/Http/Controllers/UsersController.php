@@ -7,7 +7,7 @@ use App\User;
 
 class UsersController extends Controller
 {
-    public function index()
+    /*public function index()
     {
     	$users = [
     			'0' => [
@@ -17,7 +17,7 @@ class UsersController extends Controller
     	];
     	return view('admin.projets.users', compact('users'));
     }
-
+    */
     public function create()
     {
     	return view('admin.projets.users_create');
@@ -26,7 +26,7 @@ class UsersController extends Controller
     public function store(Request $request) 
     {
     	User::create($request->all());
-    	return 'GIT GUD CASU';
+    	return 'compte créer';
     	return $request->all();
     }
 }

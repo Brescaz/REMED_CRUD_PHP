@@ -49,6 +49,14 @@ Route::get('projets', ['uses' => 'ProjetsController@index']);
 Route::get('projets/create', ['uses' => 'ProjetsController@create']);
 Route::post('projets', ['uses' => 'ProjetsController@store']);
 
+/* --------- projet user ---------------- --------------------------------------------------*/
+
+Route::get('user_projets', ['uses' => 'UsersProjetsController@index']);
+
+Route::get('user_projets/create', ['uses' => 'UsersProjetsController@create']);
+Route::post('user_projets', ['uses' => 'UsersProjetsController@store']);
+
+
 /* --------- users --------------------------------------------------------------------- */
 
 Route::get('users', ['uses' => 'UsersController@index']);
